@@ -6,11 +6,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "elasticsearch/elasticsearch": "^8.15",
         "guzzlehttp/guzzle": "^7.2",
         "joisarjignesh/bigbluebutton": "^2.8",
         "jornatf/laravel-trait-generator": "^1.0",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
+        "laravel/scout": "^10.11",
         "laravel/tinker": "^2.8",
         "predis/predis": "^2.2",
         "update-bigbluebutton/bigbluebutton-api-php": "^1.0"
@@ -65,7 +67,8 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "pestphp/pest-plugin": true
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
         }
     },
     "minimum-stability": "stable",
