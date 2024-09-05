@@ -22,7 +22,7 @@ Route::post('store-cache',[PracticeController::class,'storeCache']);
 Route::get('get-cache/{id}',[PracticeController::class,'getChache']);
 
 // Cache cart
-Route::controller(\App\Http\Controllers\CartController::class)->group(function () {
+Route::controller(\App\Http\Controllers\CacheCartController::class)->group(function () {
    Route::get('cart-items','getCartItems')->name('cart-items');
    Route::post('add-to-cart','addToCart')->name('add-to-cart');
    Route::delete('remove-item-from-cart','removeFromCart')->name('remove-item-from-cart');
@@ -50,5 +50,16 @@ Route::controller(\App\Http\Controllers\CartController::class)->group(function (
 //   Route::delete('clear-cart','clearCart')->name('clear-cart');
 //   Route::delete('flush-cache','flushCache')->name('clear-cart');
 //});
+
+// Cache check
+Route::controller(\App\Http\Controllers\CacheController::class)->group(function() {
+    Route::get('remember-on-cache','rememberOnCache');
+    Route::get('fetch-from-cache','rememberOnCache');
+});
+
+// Redis check
+Route::controller(\App\Http\Controllers\RedisController::class)->group(function() {
+    //
+});
 
 

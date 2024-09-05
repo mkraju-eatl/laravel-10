@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
-class CartController extends Controller
+class CacheCartController extends Controller
 {
     protected mixed $userId = 2;
 
