@@ -13,7 +13,7 @@ use Laravel\Scout\Searchable;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable,CacheForever,Searchable;
+    use HasApiTokens, HasFactory, Notifiable,CacheForever;
 
     // Define the fields that should be indexed in Elasticsearch
     public function toSearchableArray()

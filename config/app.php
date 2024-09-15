@@ -185,7 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        App\Providers\BigBlueButtonServiceProvider::class,
         /*
          * Application Service Providers...
          */
